@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="code" type="Project" date="2022-02-08" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "2.319" stddev = "4.062" max = "38" maxinrange="false">
+         <Value name="getScore" source ="Lane.java" package ="(default package)" value ="38" inrange="false"/>
+         <Value name="run" source ="Lane.java" package ="(default package)" value ="19" inrange="false"/>
+         <Value name="receiveLaneEvent" source ="LaneView.java" package ="(default package)" value ="19" inrange="false"/>
+         <Value name="receivePinsetterEvent" source ="Lane.java" package ="(default package)" value ="12" inrange="false"/>
+         <Value name="actionPerformed" source ="AddPartyView.java" package ="(default package)" value ="11" inrange="false"/>
+         <Value name="actionPerformed" source ="LaneStatusView.java" package ="(default package)" value ="11" inrange="false"/>
+         <Value name="makeFrame" source ="LaneView.java" package ="(default package)" value ="7"/>
+         <Value name="receivePinsetterEvent" source ="PinSetterView.java" package ="(default package)" value ="7"/>
+         <Value name="ballThrown" source ="Pinsetter.java" package ="(default package)" value ="7"/>
+         <Value name="equals" source ="Bowler.java" package ="(default package)" value ="4"/>
+         <Value name="assignLane" source ="ControlDesk.java" package ="(default package)" value ="4"/>
+         <Value name="actionPerformed" source ="ControlDeskView.java" package ="(default package)" value ="4"/>
+         <Value name="print" source ="PrintableText.java" package ="(default package)" value ="4"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="4"/>
+         <Value name="updateNewPatron" source ="AddPartyView.java" package ="(default package)" value ="3"/>
+         <Value name="valueChanged" source ="AddPartyView.java" package ="(default package)" value ="3"/>
+         <Value name="getBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="3"/>
+         <Value name="registerPatron" source ="ControlDesk.java" package ="(default package)" value ="3"/>
+         <Value name="run" source ="ControlDesk.java" package ="(default package)" value ="3"/>
+         <Value name="actionPerformed" source ="EndGamePrompt.java" package ="(default package)" value ="3"/>
+         <Value name="getResult" source ="EndGamePrompt.java" package ="(default package)" value ="3"/>
+         <Value name="actionPerformed" source ="EndGameReport.java" package ="(default package)" value ="3"/>
+         <Value name="getResult" source ="EndGameReport.java" package ="(default package)" value ="3"/>
+         <Value name="publish" source ="Lane.java" package ="(default package)" value ="3"/>
+         <Value name="resetScores" source ="Lane.java" package ="(default package)" value ="3"/>
+         <Value name="receiveLaneEvent" source ="LaneStatusView.java" package ="(default package)" value ="3"/>
+         <Value name="actionPerformed" source ="NewPatronView.java" package ="(default package)" value ="3"/>
+         <Value name="totalPinsDown" source ="PinsetterEvent.java" package ="(default package)" value ="3"/>
+         <Value name="getScores" source ="ScoreHistoryFile.java" package ="(default package)" value ="3"/>
+         <Value name="sendPrintout" source ="ScoreReport.java" package ="(default package)" value ="3"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="2"/>
+         <Value name="getBowlers" source ="BowlerFile.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="addPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="getPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="publish" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="main" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="reset" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="resetPins" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="sendEvent" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="2"/>
+         <Value name="sendEmail" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="getNames" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="getControlDesk" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getFullName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="putBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="1"/>
+         <Value name="getLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="getNumLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="viewScores" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getPartyQueue" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskObserver.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[#windowClosing" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="updateAddParty" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="distroy" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="destroy" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="valueChanged" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="assignParty" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="getPinsetter" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isGameFinished" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isPartyAssigned" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="lanePublish" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="markScore" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="pauseGame" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="resetBowlerIterator" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unPauseGame" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unsubscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBall" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBowler" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCumulScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCurScores" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrame" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrameNum" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getIndex" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isMechanicalProblem" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBall" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getBowler" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getCumulScore" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getCurScores" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getFrame" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getFrameNum" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getIndex" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="LaneEventInterface.java" package ="(default package)" value ="1"/>
+         <Value name="receiveLaneEvent" source ="LaneObserver.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="LaneServer.java" package ="(default package)" value ="1"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="showLane" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[#windowClosing" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="done" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getFull" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="getMembers" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="getThrowNumber" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isFoulCommited" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinKnockedDown" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinsDownOnThisThrow" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="PinsetterObserver.java" package ="(default package)" value ="1"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="1"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="add" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="asVector" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="hasMoreElements" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="next" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getDate" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="addScore" source ="ScoreHistoryFile.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="drive.java" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "0.723" stddev = "1.131" max = "9" maxinrange="false">
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="9" inrange="false"/>
+         <Value name="markScore" source ="Lane.java" package ="(default package)" value ="4"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="4"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="3"/>
+         <Value name="putBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="3"/>
+         <Value name="print" source ="PrintableText.java" package ="(default package)" value ="3"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="3"/>
+         <Value name="addScore" source ="ScoreHistoryFile.java" package ="(default package)" value ="3"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="3"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="3"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="getScore" source ="Lane.java" package ="(default package)" value ="2"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="2"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="updateNewPatron" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="valueChanged" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="equals" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="addPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="publish" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="registerPatron" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="viewScores" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskObserver.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[#windowClosing" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="updateAddParty" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="valueChanged" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="assignParty" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="publish" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unsubscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="receiveLaneEvent" source ="LaneObserver.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="LaneServer.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveLaneEvent" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[#windowClosing" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="makeFrame" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveLaneEvent" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="actionPerformed" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="sendEvent" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="pinKnockedDown" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="PinsetterObserver.java" package ="(default package)" value ="1"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="1"/>
+         <Value name="add" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="getScores" source ="ScoreHistoryFile.java" package ="(default package)" value ="1"/>
+         <Value name="sendEmail" source ="ScoreReport.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="drive.java" package ="(default package)" value ="1"/>
+         <Value name="getNames" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="getParty" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="getControlDesk" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="getEmail" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="getFullName" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="getNick" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="getNickName" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="getBowlers" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="assignLane" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="getLanes" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="getNumLanes" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="getPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="run" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="getPartyQueue" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="distroy" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="getResult" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="destroy" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="getResult" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="getPinsetter" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="isGameFinished" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="isPartyAssigned" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="lanePublish" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="pauseGame" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="resetBowlerIterator" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="resetScores" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="run" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="unPauseGame" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="getBall" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getBowler" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getCumulScore" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getCurScores" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getFrame" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getFrameNum" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getIndex" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getParty" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getScore" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="isMechanicalProblem" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="getBall" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getBowler" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCumulScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCurScores" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrame" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrameNum" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getIndex" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getParty" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="showLane" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="hide" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="show" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="done" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="getEmail" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="getFull" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="getNick" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="getMembers" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="hide" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="show" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="ballThrown" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="reset" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="resetPins" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="getThrowNumber" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="isFoulCommited" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="pinsDownOnThisThrow" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="totalPinsDown" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="asVector" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="hasMoreElements" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="next" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="getDate" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="getNickName" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="getScore" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="toString" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="sendPrintout" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1.511" stddev = "1.177" max = "7" maxinrange="false">
+         <Value name="getScore" source ="Lane.java" package ="(default package)" value ="7" inrange="false"/>
+         <Value name="run" source ="Lane.java" package ="(default package)" value ="7" inrange="false"/>
+         <Value name="receivePinsetterEvent" source ="Lane.java" package ="(default package)" value ="5"/>
+         <Value name="receiveLaneEvent" source ="LaneView.java" package ="(default package)" value ="5"/>
+         <Value name="actionPerformed" source ="AddPartyView.java" package ="(default package)" value ="4"/>
+         <Value name="actionPerformed" source ="LaneStatusView.java" package ="(default package)" value ="4"/>
+         <Value name="receivePinsetterEvent" source ="PinSetterView.java" package ="(default package)" value ="4"/>
+         <Value name="ballThrown" source ="Pinsetter.java" package ="(default package)" value ="4"/>
+         <Value name="updateNewPatron" source ="AddPartyView.java" package ="(default package)" value ="3"/>
+         <Value name="getBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="3"/>
+         <Value name="assignLane" source ="ControlDesk.java" package ="(default package)" value ="3"/>
+         <Value name="run" source ="ControlDesk.java" package ="(default package)" value ="3"/>
+         <Value name="getResult" source ="EndGamePrompt.java" package ="(default package)" value ="3"/>
+         <Value name="getResult" source ="EndGameReport.java" package ="(default package)" value ="3"/>
+         <Value name="publish" source ="Lane.java" package ="(default package)" value ="3"/>
+         <Value name="resetScores" source ="Lane.java" package ="(default package)" value ="3"/>
+         <Value name="makeFrame" source ="LaneView.java" package ="(default package)" value ="3"/>
+         <Value name="totalPinsDown" source ="PinsetterEvent.java" package ="(default package)" value ="3"/>
+         <Value name="print" source ="PrintableText.java" package ="(default package)" value ="3"/>
+         <Value name="getScores" source ="ScoreHistoryFile.java" package ="(default package)" value ="3"/>
+         <Value name="sendPrintout" source ="ScoreReport.java" package ="(default package)" value ="3"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="2"/>
+         <Value name="valueChanged" source ="AddPartyView.java" package ="(default package)" value ="2"/>
+         <Value name="equals" source ="Bowler.java" package ="(default package)" value ="2"/>
+         <Value name="getBowlers" source ="BowlerFile.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="addPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="getPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="publish" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="registerPatron" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="EndGamePrompt.java" package ="(default package)" value ="2"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="main" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="receiveLaneEvent" source ="LaneStatusView.java" package ="(default package)" value ="2"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="actionPerformed" source ="NewPatronView.java" package ="(default package)" value ="2"/>
+         <Value name="reset" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="resetPins" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="sendEvent" source ="Pinsetter.java" package ="(default package)" value ="2"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="2"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="sendEmail" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="2"/>
+         <Value name="getNames" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="getControlDesk" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getFullName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="putBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="1"/>
+         <Value name="getLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="getNumLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="viewScores" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getPartyQueue" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[#windowClosing" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="updateAddParty" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="distroy" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="destroy" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="valueChanged" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="assignParty" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="getPinsetter" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isGameFinished" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isPartyAssigned" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="lanePublish" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="markScore" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="pauseGame" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="resetBowlerIterator" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unPauseGame" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unsubscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBall" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBowler" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCumulScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCurScores" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrame" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrameNum" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getIndex" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isMechanicalProblem" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="showLane" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[#windowClosing" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="done" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getFull" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="getMembers" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="getThrowNumber" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isFoulCommited" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinKnockedDown" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinsDownOnThisThrow" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="1"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="add" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="asVector" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="hasMoreElements" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="next" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getDate" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="addScore" source ="ScoreHistoryFile.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="drive.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="getBall" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getBowler" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCumulScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCurScores" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrame" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrameNum" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getIndex" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getParty" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="receiveLaneEvent" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="subscribe" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="receivePinsetterEvent" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "1" stddev = "0" max = "1">
+         <Value name="(default package)" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0.172" stddev = "0" max = "0.172">
+         <Value name="(default package)" package ="(default package)" value ="0.172"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0.172" stddev = "0" max = "0.172">
+         <Value name="(default package)" package ="(default package)" value ="0.172"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "0.897" stddev = "0.48" max = "2">
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="2"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="1"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="1"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="1"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "327" avg = "11.276" stddev = "15.991" max = "87">
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="87"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="31"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="22"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="21"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="17"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="15"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="13"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="12"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="11"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="11"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="9"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="9"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="9"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="8"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="8"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="8"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="6"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="5"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="5"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="5"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="4"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="2"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="1"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="1"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "6" avg = "0.207" stddev = "0.663" max = "3">
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="3"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="1"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "3" avg = "0.103" stddev = "0.305" max = "1">
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0.375" stddev = "0.374" max = "0.91">
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0.91"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0.894"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0.88"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0.851"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0.833"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0.75"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0.729"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="0.719"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="0.714"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0.712"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="0.667"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0.619"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0.56"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0.533"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="0.5"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "138" avg = "4.759" stddev = "5.556" max = "18">
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="18"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="17"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="15"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="14"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="13"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="10"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="8"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="7"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="6"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="5"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="4"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="4"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="4"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="3"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="3"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="2"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="1"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "2" avg = "0.069" stddev = "0.253" max = "1">
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="1"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="1"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "133" avg = "4.586" stddev = "3.765" max = "17">
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="17"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="11"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="11"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="9"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="6"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="6"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="6"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="6"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="6"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="6"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="5"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="5"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="5"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="5"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="5"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="4"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="4"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="4"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="2"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="2"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="2"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="1"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="1"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "8" avg = "0.276" stddev = "0.69" max = "3">
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="3"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="2"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="1"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0.017" stddev = "0.052" max = "0.2">
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[" source ="ControlDeskView.java" package ="(default package)" value ="2"/>
+         <Value name="LaneView.anonymous#~QLane;~I[" source ="LaneView.java" package ="(default package)" value ="2"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="0.2"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="0.182"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="0.118"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="0"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="0"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="0"/>
+         <Value name="BowlerFile" source ="BowlerFile.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskObserver" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="0"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="0"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="0"/>
+         <Value name="LaneEventInterface" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="LaneObserver" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="LaneServer" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="0"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="0"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="0"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="0"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="0"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="0"/>
+         <Value name="PinsetterObserver" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="0"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreHistoryFile" source ="ScoreHistoryFile.java" package ="(default package)" value ="0"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="0"/>
+         <Value name="drive" source ="drive.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "29" avg = "29" stddev = "0" max = "29">
+         <Value name="(default package)" package ="(default package)" value ="29"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "5" avg = "5" stddev = "0" max = "5">
+         <Value name="(default package)" package ="(default package)" value ="5"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="1"/>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="1814"/>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "1284" avg = "9.106" stddev = "17.201" max = "88">
+         <Value name="getScore" source ="Lane.java" package ="(default package)" value ="88"/>
+         <Value name="PinSetterView" source ="PinSetterView.java" package ="(default package)" value ="85"/>
+         <Value name="AddPartyView" source ="AddPartyView.java" package ="(default package)" value ="73"/>
+         <Value name="run" source ="Lane.java" package ="(default package)" value ="72"/>
+         <Value name="ControlDeskView" source ="ControlDeskView.java" package ="(default package)" value ="70"/>
+         <Value name="receiveLaneEvent" source ="LaneView.java" package ="(default package)" value ="62"/>
+         <Value name="makeFrame" source ="LaneView.java" package ="(default package)" value ="55"/>
+         <Value name="NewPatronView" source ="NewPatronView.java" package ="(default package)" value ="55"/>
+         <Value name="EndGameReport" source ="EndGameReport.java" package ="(default package)" value ="46"/>
+         <Value name="LaneStatusView" source ="LaneStatusView.java" package ="(default package)" value ="46"/>
+         <Value name="EndGamePrompt" source ="EndGamePrompt.java" package ="(default package)" value ="35"/>
+         <Value name="actionPerformed" source ="LaneStatusView.java" package ="(default package)" value ="28"/>
+         <Value name="ScoreReport" source ="ScoreReport.java" package ="(default package)" value ="28"/>
+         <Value name="actionPerformed" source ="AddPartyView.java" package ="(default package)" value ="25"/>
+         <Value name="receivePinsetterEvent" source ="Lane.java" package ="(default package)" value ="25"/>
+         <Value name="sendEmail" source ="ScoreReport.java" package ="(default package)" value ="24"/>
+         <Value name="ballThrown" source ="Pinsetter.java" package ="(default package)" value ="22"/>
+         <Value name="receivePinsetterEvent" source ="PinSetterView.java" package ="(default package)" value ="19"/>
+         <Value name="updateNewPatron" source ="AddPartyView.java" package ="(default package)" value ="17"/>
+         <Value name="getBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="17"/>
+         <Value name="print" source ="PrintableText.java" package ="(default package)" value ="17"/>
+         <Value name="actionPerformed" source ="NewPatronView.java" package ="(default package)" value ="12"/>
+         <Value name="equals" source ="Bowler.java" package ="(default package)" value ="11"/>
+         <Value name="receiveLaneEvent" source ="LaneStatusView.java" package ="(default package)" value ="11"/>
+         <Value name="LaneView" source ="LaneView.java" package ="(default package)" value ="11"/>
+         <Value name="getScores" source ="ScoreHistoryFile.java" package ="(default package)" value ="11"/>
+         <Value name="actionPerformed" source ="ControlDeskView.java" package ="(default package)" value ="10"/>
+         <Value name="resetScores" source ="Lane.java" package ="(default package)" value ="10"/>
+         <Value name="sendPrintout" source ="ScoreReport.java" package ="(default package)" value ="10"/>
+         <Value name="assignLane" source ="ControlDesk.java" package ="(default package)" value ="9"/>
+         <Value name="getPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="9"/>
+         <Value name="registerPatron" source ="ControlDesk.java" package ="(default package)" value ="9"/>
+         <Value name="LaneEvent" source ="LaneEvent.java" package ="(default package)" value ="9"/>
+         <Value name="valueChanged" source ="AddPartyView.java" package ="(default package)" value ="8"/>
+         <Value name="getBowlers" source ="BowlerFile.java" package ="(default package)" value ="8"/>
+         <Value name="ControlDesk" source ="ControlDesk.java" package ="(default package)" value ="8"/>
+         <Value name="addPartyQueue" source ="ControlDesk.java" package ="(default package)" value ="8"/>
+         <Value name="publish" source ="ControlDesk.java" package ="(default package)" value ="8"/>
+         <Value name="getResult" source ="EndGamePrompt.java" package ="(default package)" value ="8"/>
+         <Value name="getResult" source ="EndGameReport.java" package ="(default package)" value ="8"/>
+         <Value name="Lane" source ="Lane.java" package ="(default package)" value ="8"/>
+         <Value name="assignParty" source ="Lane.java" package ="(default package)" value ="8"/>
+         <Value name="actionPerformed" source ="EndGameReport.java" package ="(default package)" value ="7"/>
+         <Value name="main" source ="EndGameReport.java" package ="(default package)" value ="7"/>
+         <Value name="markScore" source ="Lane.java" package ="(default package)" value ="7"/>
+         <Value name="reset" source ="Pinsetter.java" package ="(default package)" value ="7"/>
+         <Value name="PinsetterEvent" source ="PinsetterEvent.java" package ="(default package)" value ="7"/>
+         <Value name="totalPinsDown" source ="PinsetterEvent.java" package ="(default package)" value ="7"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="7"/>
+         <Value name="sendln" source ="ScoreReport.java" package ="(default package)" value ="7"/>
+         <Value name="run" source ="ControlDesk.java" package ="(default package)" value ="6"/>
+         <Value name="actionPerformed" source ="EndGamePrompt.java" package ="(default package)" value ="6"/>
+         <Value name="publish" source ="Lane.java" package ="(default package)" value ="6"/>
+         <Value name="main" source ="drive.java" package ="(default package)" value ="6"/>
+         <Value name="putBowlerInfo" source ="BowlerFile.java" package ="(default package)" value ="5"/>
+         <Value name="Pinsetter" source ="Pinsetter.java" package ="(default package)" value ="5"/>
+         <Value name="addScore" source ="ScoreHistoryFile.java" package ="(default package)" value ="5"/>
+         <Value name="sendEvent" source ="Pinsetter.java" package ="(default package)" value ="4"/>
+         <Value name="Bowler" source ="Bowler.java" package ="(default package)" value ="3"/>
+         <Value name="actionPerformed" source ="LaneView.java" package ="(default package)" value ="3"/>
+         <Value name="resetPins" source ="Pinsetter.java" package ="(default package)" value ="3"/>
+         <Value name="Score" source ="Score.java" package ="(default package)" value ="3"/>
+         <Value name="valueChanged" source ="EndGameReport.java" package ="(default package)" value ="2"/>
+         <Value name="lanePublish" source ="Lane.java" package ="(default package)" value ="2"/>
+         <Value name="pauseGame" source ="Lane.java" package ="(default package)" value ="2"/>
+         <Value name="unPauseGame" source ="Lane.java" package ="(default package)" value ="2"/>
+         <Value name="PrintableText" source ="PrintableText.java" package ="(default package)" value ="2"/>
+         <Value name="getNames" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="AddPartyView.java" package ="(default package)" value ="1"/>
+         <Value name="Alley" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="getControlDesk" source ="Alley.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getFullName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Bowler.java" package ="(default package)" value ="1"/>
+         <Value name="getLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="getNumLanes" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="ControlDesk.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskEvent" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getPartyQueue" source ="ControlDeskEvent.java" package ="(default package)" value ="1"/>
+         <Value name="ControlDeskView.anonymous#~QControlDesk;~I[#windowClosing" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="updateAddParty" source ="ControlDeskView.java" package ="(default package)" value ="1"/>
+         <Value name="distroy" source ="EndGamePrompt.java" package ="(default package)" value ="1"/>
+         <Value name="destroy" source ="EndGameReport.java" package ="(default package)" value ="1"/>
+         <Value name="getPinsetter" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isGameFinished" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="isPartyAssigned" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="resetBowlerIterator" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="unsubscribe" source ="Lane.java" package ="(default package)" value ="1"/>
+         <Value name="getBall" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getBowler" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCumulScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getCurScores" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrame" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getFrameNum" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getIndex" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getParty" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isMechanicalProblem" source ="LaneEvent.java" package ="(default package)" value ="1"/>
+         <Value name="receivePinsetterEvent" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="showLane" source ="LaneStatusView.java" package ="(default package)" value ="1"/>
+         <Value name="LaneView.anonymous#~QLane;~I[#windowClosing" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="LaneView.java" package ="(default package)" value ="1"/>
+         <Value name="done" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getEmail" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getFull" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="getNick" source ="NewPatronView.java" package ="(default package)" value ="1"/>
+         <Value name="Party" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="getMembers" source ="Party.java" package ="(default package)" value ="1"/>
+         <Value name="hide" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="show" source ="PinSetterView.java" package ="(default package)" value ="1"/>
+         <Value name="subscribe" source ="Pinsetter.java" package ="(default package)" value ="1"/>
+         <Value name="getThrowNumber" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="isFoulCommited" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinKnockedDown" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="pinsDownOnThisThrow" source ="PinsetterEvent.java" package ="(default package)" value ="1"/>
+         <Value name="Queue" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="add" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="asVector" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="hasMoreElements" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="next" source ="Queue.java" package ="(default package)" value ="1"/>
+         <Value name="getDate" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getNickName" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="getScore" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Score.java" package ="(default package)" value ="1"/>
+         <Value name="viewScores" source ="ControlDesk.java" package ="(default package)" value ="0"/>
+         <Value name="receiveControlDeskEvent" source ="ControlDeskObserver.java" package ="(default package)" value ="0"/>
+         <Value name="getBall" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getBowler" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCumulScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getCurScores" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrame" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getFrameNum" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getIndex" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getParty" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="getScore" source ="LaneEventInterface.java" package ="(default package)" value ="0"/>
+         <Value name="receiveLaneEvent" source ="LaneObserver.java" package ="(default package)" value ="0"/>
+         <Value name="subscribe" source ="LaneServer.java" package ="(default package)" value ="0"/>
+         <Value name="receivePinsetterEvent" source ="PinsetterObserver.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   </Metrics>
