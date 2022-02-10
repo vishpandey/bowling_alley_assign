@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-import controlDesk.Party;
+import party.Party;
 import bowler.Bowler;
 
 import java.util.*;

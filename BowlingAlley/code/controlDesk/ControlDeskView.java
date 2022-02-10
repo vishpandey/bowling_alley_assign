@@ -22,6 +22,8 @@ import javax.swing.event.*;
 
 import lane.Lane;
 import lane.LaneStatusView;
+import party.AddPartyView;
+import party.Party;
 import pinsetter.Pinsetter;
 import views.Factory;
 
@@ -47,7 +49,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 
 		this.controlDesk = controlDesk;
 		this.maxMembers = maxMembers;
-		int numLanes = controlDesk.getNumLanes();
+		int numLanes = controlDesk.numLanes;
 		
 		Factory f = new Factory();
 		
@@ -91,7 +93,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 
 		JPanel partyPanel = f.CreateJPanel(new FlowLayout(), new TitledBorder("Party Queue"));
 
-		partyList = f.CreateJList(120, 10);
+		partyList = f.CreateEmptyJList(120, 10);
 		JScrollPane partyPane = f.CreateJScrollPane(partyList, "vertical");
 		
 		partyPanel.add(partyPane);
@@ -148,8 +150,8 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 	 *
 	 */
 
-	public void updateAddParty(AddPartyView addPartyView) {
-		controlDesk.addPartyQueue(addPartyView.getParty());
+	public void updateAddParty(Party newParty) {
+		controlDesk.addPartyQueue(newParty);
 	}
 
 	/**

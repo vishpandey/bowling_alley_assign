@@ -1,4 +1,4 @@
-package controlDesk;
+package party;
 /*
  * Party.java
  *

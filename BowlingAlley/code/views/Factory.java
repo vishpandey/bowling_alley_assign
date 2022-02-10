@@ -42,7 +42,7 @@ public class Factory {
 		return panel;
 	}
 	
-	public JList CreateJList(int width, int rowCount) {
+	public JList CreateEmptyJList(int width, int rowCount) {
 		Vector empty = new Vector();
 		empty.add("(Empty)");
 		
@@ -52,6 +52,15 @@ public class Factory {
 		
 		return list;
 	}
+
+	public JList CreateJList(Vector vec, int width, int rowCount) {
+		
+		JList list = new JList(vec);
+		list.setFixedCellWidth(120);
+		list.setVisibleRowCount(10);
+		
+		return list;
+	}	
 	
 	public JScrollPane CreateJScrollPane(JList list, String scrollDirection) {
 		JScrollPane pane = new JScrollPane(list);

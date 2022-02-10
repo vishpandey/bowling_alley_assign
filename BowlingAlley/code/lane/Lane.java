@@ -134,7 +134,7 @@ package lane;
 import java.util.Vector;
 
 import bowler.Bowler;
-import controlDesk.Party;
+import party.Party;
 import endGame.EndGamePrompt;
 import endGame.EndGameReport;
 import pinsetter.Pinsetter;

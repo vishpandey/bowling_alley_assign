@@ -3,7 +3,7 @@ package lane;
 import java.util.HashMap;
 
 import bowler.Bowler;
-import controlDesk.Party;
+import party.Party;
 
 public interface LaneEventInterface extends java.rmi.Remote {
 	public int getFrameNum( ) throws java.rmi.RemoteException;

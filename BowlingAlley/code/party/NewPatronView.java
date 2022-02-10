@@ -15,7 +15,7 @@
  * Class for GUI components need to add a patron
  *
  */
-package controlDesk;
+package party;
 
 import java.awt.*;
 import java.awt.event.*;

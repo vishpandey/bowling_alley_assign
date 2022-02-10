@@ -12,7 +12,7 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
 
-import controlDesk.Party;
+import party.Party;
 import bowler.Bowler;
 
 import java.util.*;

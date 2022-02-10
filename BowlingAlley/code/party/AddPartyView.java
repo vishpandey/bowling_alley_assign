@@ -1,4 +1,4 @@
-package controlDesk;
+package party;
 /* AddPartyView.java
  *
  *  Version:
@@ -34,6 +34,8 @@ import javax.swing.event.*;
 
 import bowler.Bowler;
 import bowler.BowlerFile;
+import controlDesk.ControlDeskView;
+import views.Factory;
 
 import java.util.*;
 import java.text.*;
@@ -62,17 +64,16 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		this.controlDesk = controlDesk;
 		maxSize = max;
 
+		Factory f = new Factory();
 		win = new JFrame("Add Party");
 		win.getContentPane().setLayout(new BorderLayout());
 		((JPanel) win.getContentPane()).setOpaque(false);
 
-		JPanel colPanel = new JPanel();
-		colPanel.setLayout(new GridLayout(1, 3));
+		JPanel colPanel = f.CreateJPanel(new GridLayout(1, 3));
 
 		// Party Panel
-		JPanel partyPanel = new JPanel();
-		partyPanel.setLayout(new FlowLayout());
-		partyPanel.setBorder(new TitledBorder("Your Party"));
+		JPanel partyPanel = f.CreateJPanel(new FlowLayout(), new TitledBorder("Your Party"));
+
 
 		party = new Vector();
 		Vector empty = new Vector();
@@ -181,11 +182,30 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		}
 		if (e.getSource().equals(finished)) {
 			if ( party != null && party.size() > 0) {
-				controlDesk.updateAddParty( this );
+				addPartyQueue(this.party);
+				//controlDesk.updateAddParty( this.party );
 			}
 			win.hide();
 		}
 
+	}
+
+	/**
+     * Creates a party from a Vector of nickNAmes and adds them to the wait queue.
+     *
+     * @param partyNicks	A Vector of NickNames
+     *
+     */
+
+	public void addPartyQueue(Vector partyNicks) {
+		Vector partyBowlers = new Vector();
+		for (int i = 0; i < partyNicks.size(); i++) {
+			Bowler newBowler = Bowler.registerPatron(((String) partyNicks.get(i)));
+			partyBowlers.add(newBowler);
+		}
+		Party newParty = new Party(partyBowlers);
+
+		controlDesk.updateAddParty(newParty);
 	}
 
 /**

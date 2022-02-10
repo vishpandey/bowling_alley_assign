@@ -26,7 +26,7 @@ package lane;
 import java.util.HashMap;
 
 import bowler.Bowler;
-import controlDesk.Party;
+import party.Party;
 
 public class LaneEvent {
 
