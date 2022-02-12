@@ -9,11 +9,14 @@ package lane;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.HashMap;
+
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
 
 import bowler.Bowler;
+import party.Party;
 import pinsetter.PinSetterView;
 import pinsetter.Pinsetter;
 import pinsetter.PinsetterEvent;
@@ -139,9 +142,12 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		}
 	}
 
-	public void receiveLaneEvent(LaneEvent le) {
-		curBowler.setText( ( (Bowler)le.getBowler()).getNickName() );
-		if ( le.isMechanicalProblem() ) {
+	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower, 
+								int[][] cumulScores, HashMap scores, 
+								int frameNumber, int[] curScores, 
+								int ball, boolean gameIsHalted) {
+		curBowler.setText( currentThrower.getNickName() );
+		if ( gameIsHalted ) {
 			maintenance.setBackground( Color.RED );
 		}	
 		if ( lane.isPartyAssigned() == false ) {

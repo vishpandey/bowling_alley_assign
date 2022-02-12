@@ -11,7 +11,16 @@
  *
  */
 package lane;
+
+import java.util.HashMap;
+
+import bowler.Bowler;
+import party.Party;
+
 public interface LaneObserver {
-	public void receiveLaneEvent(LaneEvent le);
+	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower, 
+			int[][] cumulScores, HashMap scores, 
+			int frameNumber, int[] curScores, 
+			int ball, boolean gameIsHalted);
 };
 

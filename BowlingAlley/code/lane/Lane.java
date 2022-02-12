@@ -267,7 +267,7 @@ public class Lane extends Thread implements PinsetterObserver {
 					party = null;
 					partyAssigned = false;
 					
-					publish(lanePublish());
+					publish();
 					
 					int myIndex = 0;
 					while (scoreIt.hasNext()){
@@ -417,19 +417,9 @@ public class Lane extends Thread implements PinsetterObserver {
 		curScore[ index - 1] = score;
 		scores.put(Cur, curScore);
 		getScore( Cur, frame );
-		publish( lanePublish() );
+		publish();
 	}
-
-	/** lanePublish()
-	 *
-	 * Method that creates and returns a newly created laneEvent
-	 * 
-	 * @return		The new lane event
-	 */
-	private LaneEvent lanePublish(  ) {
-		LaneEvent laneEvent = new LaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, curScores, ball, gameIsHalted);
-		return laneEvent;
-	}
+	
 
 	/** getScore()
 	 *
@@ -593,12 +583,12 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * @param event	Event that is to be published
 	 */
 
-	public void publish( LaneEvent event ) {
+	public void publish() {
 		if( subscribers.size() > 0 ) {
 			Iterator eventIterator = subscribers.iterator();
 			
 			while ( eventIterator.hasNext() ) {
-				( (LaneObserver) eventIterator.next()).receiveLaneEvent( event );
+				( (LaneObserver) eventIterator.next()).receiveLaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, curScores, ball, gameIsHalted);
 			}
 		}
 	}
@@ -618,7 +608,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	public void pauseGame() {
 		gameIsHalted = true;
-		publish(lanePublish());
+		publish();
 	}
 	
 	/**
@@ -626,7 +616,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	public void unPauseGame() {
 		gameIsHalted = false;
-		publish(lanePublish());
+		publish();
 	}
 
 }

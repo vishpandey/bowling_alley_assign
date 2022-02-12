@@ -23,6 +23,9 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
 
+import bowler.Bowler;
+import bowler.BowlerFile;
+
 import java.util.*;
 import java.text.*;
 
@@ -132,10 +135,28 @@ public class NewPatronView implements ActionListener {
 			full = fullField.getText();
 			email = emailField.getText();
 			done = true;
-			addParty.updateNewPatron( this );
+			updateNewPatron();
+			//addParty.updateNewPatron( this );
 			win.hide();
 		}
 
+	}
+
+	public void updateNewPatron() {
+		try {
+			Bowler checkBowler = BowlerFile.getBowlerInfo( this.getNick() );
+			if ( checkBowler == null ) {
+				BowlerFile.putBowlerInfo(
+					this.getNick(),
+					this.getFull(),
+					this.getEmail());
+				addParty.updateNewPatron(this.getNick());
+			} else {
+				System.err.println( "A Bowler with that name already exists." );
+			}
+		} catch (Exception e2) {
+			System.err.println("File I/O Error");
+		}
 	}
 
 	public boolean done() {
