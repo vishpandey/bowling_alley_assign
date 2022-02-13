@@ -13,10 +13,12 @@ public class ScoreHistoryFile {
 
 	private static String SCOREHISTORY_DAT = "SCOREHISTORY.DAT";
 
-	public static void addScore(String nick, String date, String score)
+	public static void addScore(String nick, String score)
 		throws IOException, FileNotFoundException {
 
-		String data = nick + "\t" + date + "\t" + score + "\n";
+		Date date = new Date();
+		String dateString = "" + date.getHours() + ":" + date.getMinutes() + " " + date.getMonth() + "/" + date.getDay() + "/" + (date.getYear() + 1900);
+		String data = nick + "\t" + dateString + "\t" + score + "\n";
 
 		RandomAccessFile out = new RandomAccessFile(SCOREHISTORY_DAT, "rw");
 		out.skipBytes((int) out.length());

@@ -128,10 +128,8 @@ public class LaneView implements LaneObserver, ActionListener {
 		return panel;
 	}
 
-	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower, 
-								int[][] cumulScores, HashMap scores, 
-								int frameNumber, int[] curScores, 
-								int ball, boolean gameIsHalted) {
+	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower,  
+								int frameNumber, int ball, boolean gameIsHalted, LaneScore ls) {
 		if (lane.isPartyAssigned()) {
 			int numBowlers = party.getMembers().size();
 			while (!initDone) {
@@ -169,7 +167,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 			}
 
-			int[][] lescores = cumulScores;
+			int[][] lescores = ls.getCumulScores();
 			for (int k = 0; k < numBowlers; k++) {
 				for (int i = 0; i <= frameNumber - 1; i++) {
 					if (lescores[k][i] != 0)
@@ -177,32 +175,19 @@ public class LaneView implements LaneObserver, ActionListener {
 							(new Integer(lescores[k][i])).toString());
 				}
 				for (int i = 0; i < 21; i++) {
-					if (((int[]) ((HashMap) scores)
-						.get(bowlers.get(k)))[i]
-						!= -1)
-						if (((int[]) ((HashMap) scores)
-							.get(bowlers.get(k)))[i]
-							== 10
+					int[] temp_scores = ((int[]) ((HashMap) ls.getScoresHashMap()).get(bowlers.get(k)));
+					if (temp_scores[i] != -1)
+						if (temp_scores[i] == 10
 							&& (i % 2 == 0 || i == 19))
 							ballLabel[k][i].setText("X");
-						else if (
-							i > 0
-								&& ((int[]) ((HashMap) scores)
-									.get(bowlers.get(k)))[i]
-									+ ((int[]) ((HashMap) scores)
-										.get(bowlers.get(k)))[i
-									- 1]
-									== 10
-								&& i % 2 == 1)
+						else if (i > 0 && temp_scores[i] + temp_scores[i- 1] == 10 && i % 2 == 1)
 							ballLabel[k][i].setText("/");
-						else if ( ((int[])((HashMap) scores).get(bowlers.get(k)))[i] == -2 ){
+						else if (temp_scores[i] == -2 ){
 							
 							ballLabel[k][i].setText("F");
 						} else
 							ballLabel[k][i].setText(
-								(new Integer(((int[]) ((HashMap) scores)
-									.get(bowlers.get(k)))[i]))
-									.toString());
+								(new Integer(temp_scores[i])).toString());
 				}
 			}
 
@@ -214,5 +199,4 @@ public class LaneView implements LaneObserver, ActionListener {
 			lane.pauseGame();
 		}
 	}
-
 }

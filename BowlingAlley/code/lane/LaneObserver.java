@@ -18,9 +18,8 @@ import bowler.Bowler;
 import party.Party;
 
 public interface LaneObserver {
-	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower, 
-			int[][] cumulScores, HashMap scores, 
-			int frameNumber, int[] curScores, 
-			int ball, boolean gameIsHalted);
+	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower,
+			int frameNumber,  int ball, 
+            boolean gameIsHalted, LaneScore ls);
 };
 

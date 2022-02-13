@@ -136,16 +136,15 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		}
 		if (e.getSource().equals(maintenance)) {
 			if ( lane.isPartyAssigned() ) {
-				lane.unPauseGame();
+				lane.resumeGame();
 				maintenance.setBackground( Color.GREEN );
 			}
 		}
 	}
 
-	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower, 
-								int[][] cumulScores, HashMap scores, 
-								int frameNumber, int[] curScores, 
-								int ball, boolean gameIsHalted) {
+	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower,  
+								int frameNumber, int ball, 
+								boolean gameIsHalted, LaneScore ls) {
 		curBowler.setText( currentThrower.getNickName() );
 		if ( gameIsHalted ) {
 			maintenance.setBackground( Color.RED );
