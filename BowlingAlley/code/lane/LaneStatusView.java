@@ -21,12 +21,13 @@ import pinsetter.PinSetterView;
 import pinsetter.Pinsetter;
 import pinsetter.PinsetterEvent;
 import pinsetter.PinsetterObserver;
+import views.Factory;
 
 public class LaneStatusView implements ActionListener, LaneObserver, PinsetterObserver {
 
 	private JPanel jp;
 
-	private JLabel curBowler, foul, pinsDown;
+	private JLabel curBowler, pinsDown;
 	private JButton viewLane;
 	private JButton viewPinSetter, maintenance;
 
@@ -53,40 +54,28 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		lv = new LaneView( lane, laneNum );
 		lane.subscribe(lv);
 
+		Factory f = new Factory();
 
-		jp = new JPanel();
-		jp.setLayout(new FlowLayout());
+		jp = f.CreateJPanel(new FlowLayout());
 		JLabel cLabel = new JLabel( "Now Bowling: " );
 		curBowler = new JLabel( "(no one)" );
-		JLabel fLabel = new JLabel( "Foul: " );
-		foul = new JLabel( " " );
 		JLabel pdLabel = new JLabel( "Pins Down: " );
 		pinsDown = new JLabel( "0" );
 
 		// Button Panel
-		JPanel buttonPanel = new JPanel();
-		buttonPanel.setLayout(new FlowLayout());
+		JPanel buttonPanel = f.CreateJPanel(new FlowLayout());
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		viewLane = new JButton("View Lane");
-		JPanel viewLanePanel = new JPanel();
-		viewLanePanel.setLayout(new FlowLayout());
-		viewLane.addActionListener(this);
-		viewLanePanel.add(viewLane);
+		viewLane = f.CreateJButton("View Lane");
+		JPanel viewLanePanel = f.CreatePanelWithButton(viewLane, new FlowLayout(), this);
 
-		viewPinSetter = new JButton("Pinsetter");
-		JPanel viewPinSetterPanel = new JPanel();
-		viewPinSetterPanel.setLayout(new FlowLayout());
-		viewPinSetter.addActionListener(this);
-		viewPinSetterPanel.add(viewPinSetter);
+		viewPinSetter = f.CreateJButton("Pinsetter");
+		JPanel viewPinSetterPanel = f.CreatePanelWithButton(viewPinSetter, new FlowLayout(), this);
 
-		maintenance = new JButton("     ");
+		maintenance = f.CreateJButton("     ");
 		maintenance.setBackground( Color.GREEN );
-		JPanel maintenancePanel = new JPanel();
-		maintenancePanel.setLayout(new FlowLayout());
-		maintenance.addActionListener(this);
-		maintenancePanel.add(maintenance);
+		JPanel maintenancePanel = f.CreatePanelWithButton(maintenance, new FlowLayout(), this);
 
 		viewLane.setEnabled( false );
 		viewPinSetter.setEnabled( false );
@@ -98,8 +87,6 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 
 		jp.add( cLabel );
 		jp.add( curBowler );
-//		jp.add( fLabel );
-//		jp.add( foul );
 		jp.add( pdLabel );
 		jp.add( pinsDown );
 		

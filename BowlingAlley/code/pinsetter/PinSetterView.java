@@ -42,14 +42,14 @@ public class PinSetterView implements PinsetterObserver {
 	private JFrame frame;
     
     public PinSetterView ( int laneNum ) {
+
+    Factory f = new Factory();
 	
 	frame = new JFrame ( "Lane " + laneNum + ":" );
 	
 	Container cpanel = frame.getContentPane ( );
 	
-	JPanel pins = new JPanel ( );
-	
-	pins.setLayout ( new GridLayout ( 4, 7 ) );
+	JPanel pins = f.CreateJPanel(new GridLayout ( 4, 7 ));
 	
 	//********************Top of GUI indicates first or second roll
 	

@@ -1,6 +1,7 @@
 package views;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -24,6 +25,20 @@ public class Factory {
 		panel.setLayout(mgr);
 		panel.setBorder(border);
 		
+		return panel;
+	}
+
+	// public JLabel CreateJLabel(String labelText) {
+	// 	JLabel label = new JLabel(labelText);
+
+	// 	return label;
+	// }
+
+	public JPanel CreatePanelWithLabel(LayoutManager mgr, String labelText) {
+		JPanel panel = CreateJPanel(mgr);
+		JLabel label = new JLabel(labelText);
+		panel.add(label);
+
 		return panel;
 	}
 	
