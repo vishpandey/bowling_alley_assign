@@ -69,17 +69,16 @@ class LaneScore {
 	 * @param ball		The ball the bowler is on
 	 * @param score	The bowler's score 
 	 */
-	public void markScore( Bowler Cur, int frame, int throwNumber, int score, 
-							int bowlIndex, int ball){
+	public void markScore( Bowler Cur, int[] intArgs){
 		int[] curScore;
-		int index =  ( (frame - 1) * 2 + throwNumber);
+		int index =  ( (intArgs[0] - 1) * 2 + intArgs[1]);
 
 		curScore = (int[]) getScoreFromKey(Cur);
 
 	
-		curScore[ index - 1] = score;
+		curScore[ index - 1] = intArgs[2];
 		setScoresInHashMap(Cur, curScore);
-		getScore( Cur, frame, bowlIndex, ball);
+		getScore( Cur, intArgs[0], intArgs[3], intArgs[4]);
 	}
 
 

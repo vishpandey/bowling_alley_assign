@@ -129,8 +129,7 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		}
 	}
 
-	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower,  
-								int frameNumber, int ball, 
+	public void receiveLaneEvent(Party party, Bowler currentThrower, int[] intArgs,
 								boolean gameIsHalted, LaneScore ls) {
 		curBowler.setText( currentThrower.getNickName() );
 		if ( gameIsHalted ) {

@@ -313,9 +313,11 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	public void receivePinsetterEvent(PinsetterEvent pe) {
 		
-			if (pe.pinsDownOnThisThrow() >=  0) {			// this is a real throw
-				ls.markScore(currentThrower, frameNumber + 1, pe.getThrowNumber(), pe.pinsDownOnThisThrow(), 
-							bowlIndex, ball);
+			if (pe.pinsDownOnThisThrow() >=  0) {
+				int[] intArgs = new int[]{frameNumber + 1, pe.getThrowNumber(), 
+											pe.pinsDownOnThisThrow(), bowlIndex, 
+											ball};
+				ls.markScore(currentThrower, intArgs); // this is a real throw
 				publish();
 				// next logic handles the ?: what conditions dont allow them another throw?
 				// handle the case of 10th frame first
@@ -570,7 +572,8 @@ public class Lane extends Thread implements PinsetterObserver {
 			Iterator eventIterator = subscribers.iterator();
 			
 			while ( eventIterator.hasNext() ) {
-				( (LaneObserver) eventIterator.next()).receiveLaneEvent(party, bowlIndex, currentThrower, frameNumber+1, ball, gameIsHalted, ls);
+				int[] intArgs = new int[]{bowlIndex, frameNumber+1, ball};
+				( (LaneObserver) eventIterator.next()).receiveLaneEvent(party, currentThrower, intArgs, gameIsHalted, ls);
 			}
 		}
 	}

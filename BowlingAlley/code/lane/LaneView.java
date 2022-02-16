@@ -128,8 +128,9 @@ public class LaneView implements LaneObserver, ActionListener {
 		return panel;
 	}
 
-	public void receiveLaneEvent(Party party, int bowlIndex, Bowler currentThrower,  
-								int frameNumber, int ball, boolean gameIsHalted, LaneScore ls) {
+	public void receiveLaneEvent(Party party, Bowler currentThrower,
+								 int[] intArgs, boolean gameIsHalted, LaneScore ls) {
+
 		if (lane.isPartyAssigned()) {
 			int numBowlers = party.getMembers().size();
 			while (!initDone) {
@@ -140,9 +141,9 @@ public class LaneView implements LaneObserver, ActionListener {
 				}
 			}
 
-			if (frameNumber == 1
-				&& ball == 0
-				&& bowlIndex == 0) {
+			if (intArgs[1] == 1
+				&& intArgs[2] == 0
+				&& intArgs[0] == 0) {
 				System.out.println("Making the frame.");
 				cpanel.removeAll();
 				cpanel.add(makeFrame(party), "Center");
@@ -169,7 +170,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 			int[][] lescores = ls.getCumulScores();
 			for (int k = 0; k < numBowlers; k++) {
-				for (int i = 0; i <= frameNumber - 1; i++) {
+				for (int i = 0; i <= intArgs[1] - 1; i++) {
 					if (lescores[k][i] != 0)
 						scoreLabel[k][i].setText(
 							(new Integer(lescores[k][i])).toString());

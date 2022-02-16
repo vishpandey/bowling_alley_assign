@@ -16,6 +16,9 @@ package pinsetter;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import views.Factory;
+
 import java.util.Vector;
 
 
