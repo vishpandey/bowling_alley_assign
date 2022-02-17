@@ -19,7 +19,6 @@ import bowler.Bowler;
 import party.Party;
 import pinsetter.PinSetterView;
 import pinsetter.Pinsetter;
-import pinsetter.PinsetterEvent;
 import pinsetter.PinsetterObserver;
 import views.Factory;
 
@@ -113,17 +112,17 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		if (e.getSource().equals(viewLane)) {
 			if ( lane.isPartyAssigned() ) { 
 				if ( laneShowing == false ) {
-					lv.show();
+					lv.display(1);
 					laneShowing=true;
 				} else if ( laneShowing == true ) {
-					lv.hide();
+					lv.display(0);
 					laneShowing=false;
 				}
 			}
 		}
 		if (e.getSource().equals(maintenance)) {
 			if ( lane.isPartyAssigned() ) {
-				lane.resumeGame();
+				lane.pauseGame(false);
 				maintenance.setBackground( Color.GREEN );
 			}
 		}
@@ -144,8 +143,15 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		}
 	}
 
-	public void receivePinsetterEvent(PinsetterEvent pe) {
-		pinsDown.setText( ( new Integer(pe.totalPinsDown()) ).toString() );
+	public void receivePinsetterEvent(boolean[] ps, boolean foul, int tn, int pinsDownThisThrow) {
+		int count = 0;
+		
+		for (int i=0; i <= 9; i++) {
+			if (!ps[i]) {
+				count++;
+			}
+		}
+		pinsDown.setText( ( new Integer(count).toString()) );
 //		foul.setText( ( new Boolean(pe.isFoulCommited()) ).toString() );
 		
 	}

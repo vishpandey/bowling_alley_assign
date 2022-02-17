@@ -32,15 +32,12 @@ import java.text.*;
 
 public class NewPatronView implements ActionListener {
 
-	private int maxSize;
-
 	private JFrame win;
 	private JButton abort, finished;
-	private JLabel fullLabel, emailLabel;
 	private JTextField nickField, fullField, emailField;
 	private String nick, full, email;
 
-	private boolean done;
+	// private boolean done;
 
 	private String selectedNick, selectedMember;
 	private AddPartyView addParty;
@@ -48,7 +45,7 @@ public class NewPatronView implements ActionListener {
 	public NewPatronView(AddPartyView v) {
 
 		addParty=v;	
-		done = false;
+		// done = false;
 
 		Factory f = new Factory();
 
@@ -111,7 +108,7 @@ public class NewPatronView implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource().equals(abort)) {
-			done = true;
+			// done = true;
 			win.hide();
 		}
 
@@ -119,7 +116,7 @@ public class NewPatronView implements ActionListener {
 			nick = nickField.getText();
 			full = fullField.getText();
 			email = emailField.getText();
-			done = true;
+			// done = true;
 			updateNewPatron();
 			//addParty.updateNewPatron( this );
 			win.hide();
@@ -127,37 +124,21 @@ public class NewPatronView implements ActionListener {
 
 	}
 
-	public void updateNewPatron() {
+	private void updateNewPatron() {
 		try {
-			Bowler checkBowler = BowlerFile.getBowlerInfo( this.getNick() );
+			Bowler checkBowler = BowlerFile.getBowlerInfo( nick );
 			if ( checkBowler == null ) {
 				BowlerFile.putBowlerInfo(
-					this.getNick(),
-					this.getFull(),
-					this.getEmail());
-				addParty.updateNewPatron(this.getNick());
+					nick,
+					full,
+					email);
+				addParty.updateNewPatron(nick);
 			} else {
 				System.err.println( "A Bowler with that name already exists." );
 			}
 		} catch (Exception e2) {
 			System.err.println("File I/O Error");
 		}
-	}
-
-	public boolean done() {
-		return done;
-	}
-
-	public String getNick() {
-		return nick;
-	}
-
-	public String getFull() {
-		return full;
-	}
-
-	public String getEmail() {
-		return email;
 	}
 
 }

@@ -58,9 +58,6 @@ public class ControlDesk extends Thread {
 
 	/** The party wait queue */
 	private Queue partyQueue;
-
-	/** The number of lanes represented */
-	public int numLanes;
 	
 	/** The collection of subscribers */
 	private Vector subscribers;
@@ -73,13 +70,12 @@ public class ControlDesk extends Thread {
      */
 
 	public ControlDesk(int numLanes) {
-		this.numLanes = numLanes;
-		this.lanes = new HashSet(this.numLanes);
+		this.lanes = new HashSet(numLanes);
 		this.partyQueue = new Queue();
 
 		subscribers = new Vector();
 
-		for (int i = 0; i < this.numLanes; i++) {
+		for (int i = 0; i < numLanes; i++) {
 			this.lanes.add(new Lane());
 		}
 		
@@ -140,7 +136,7 @@ public class ControlDesk extends Thread {
      *
      */
 
-	public Vector getPartyQueue() {
+	private Vector getPartyQueue() {
 		Vector displayPartyQueue = new Vector();
 		for ( int i=0; i < ( (Vector)this.partyQueue.asVector()).size(); i++ ) {
 			String nextParty =

@@ -100,8 +100,7 @@ public class Pinsetter {
 	 * */
 	private void sendEvent(int jdpins) {	// send events when our state is changd
 		for (int i=0; i < subscribers.size(); i++) {
-			((PinsetterObserver)subscribers.get(i)).receivePinsetterEvent(
-				new PinsetterEvent(pins, foul, throwNumber, jdpins));
+			((PinsetterObserver)subscribers.get(i)).receivePinsetterEvent(pins, foul, throwNumber, jdpins);
 		}
 	}
 

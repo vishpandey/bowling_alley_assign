@@ -45,11 +45,10 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 	 *
 	 */
 
-	public ControlDeskView(ControlDesk controlDesk, int maxMembers) {
+	public ControlDeskView(int numLanes, ControlDesk controlDesk, int maxMembers) {
 
 		this.controlDesk = controlDesk;
 		this.maxMembers = maxMembers;
-		int numLanes = controlDesk.numLanes;
 		
 		Factory f = new Factory();
 		

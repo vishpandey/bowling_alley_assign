@@ -10,14 +10,13 @@ import score.ScoreHistoryFile;
 class LaneScore {
 	private int[] curScores;
 	private int[][] cumulScores;
-	private int[][] finalScores;
 	private HashMap scores;
 
 	LaneScore() {
 		scores = new HashMap();
 	}
 
-	public int[] getScoreFromKey(Bowler Cur) {
+	private int[] getScoreFromKey(Bowler Cur) {
 		return (int[])scores.get(Cur);
 	}
 
@@ -25,20 +24,12 @@ class LaneScore {
 		scores.put(Cur, curScore);
 	}
 
-	public void setCumulScore(int row, int col, int value) {
+	private void setCumulScore(int row, int col, int value) {
 		this.cumulScores[row][col] = value;
 	}
 
 	private void incrementCumulScore(int row, int col, int incValue) {
 		setCumulScore(row, col, getCumulScore(row, col) + incValue);
-	}
-
-	public int[][] getFinalScores() {
-		return finalScores;
-	}
-
-	public void setFinalScores(int row, int col, int value) {
-		getFinalScores()[row][col] = value;
 	}
 
 	public int getCumulScore(int row, int col) {
@@ -56,7 +47,6 @@ class LaneScore {
 	public void initScoresArrays(int size) {
 		curScores = new int[size];
 		cumulScores = new int[size][10];
-		finalScores = new int[size][128];//Hardcoding a max of 128 games
 	}
 
 
@@ -91,10 +81,9 @@ class LaneScore {
 	 * 
 	 * @return			The bowlers total score
 	 */
-	private int getScore( Bowler Cur, int frame, int bowlIndex, int ball) {
+	private void getScore( Bowler Cur, int frame, int bowlIndex, int ball) {
 		int[] curScore;
 		int strikeballs = 0;
-		int totalScore = 0;
 		curScore = getScoreFromKey(Cur);
 		for (int i = 0; i != 10; i++){
 			setCumulScore(bowlIndex, i, 0);
@@ -191,6 +180,5 @@ class LaneScore {
 				}
 			}
 		}
-		return totalScore;
 	}
 }

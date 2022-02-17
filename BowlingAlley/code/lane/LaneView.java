@@ -10,27 +10,25 @@ import java.awt.event.*;
 import javax.swing.*;
 
 import party.Party;
+import views.Factory;
 import bowler.Bowler;
 
 import java.util.*;
 
 public class LaneView implements LaneObserver, ActionListener {
 
-	private int roll;
 	private boolean initDone = true;
 
 	JFrame frame;
 	Container cpanel;
 	Vector bowlers;
-	int cur;
-	Iterator bowlIt;
 
 	JPanel[][] balls;
 	JLabel[][] ballLabel;
-	JPanel[][] scores;
+	//JPanel[][] scores;
 	JLabel[][] scoreLabel;
-	JPanel[][] ballGrid;
-	JPanel[] pins;
+	//JPanel[][] ballGrid;
+	//JPanel[] pins;
 
 	JButton maintenance;
 	Lane lane;
@@ -54,13 +52,18 @@ public class LaneView implements LaneObserver, ActionListener {
 
 	}
 
-	public void show() {
+	public void display(int num) {
+		if(num == 0) {
+			frame.hide();
+			return;
+		}
+		
 		frame.show();
 	}
 
-	public void hide() {
-		frame.hide();
-	}
+	// public void hide() {
+	// 	frame.hide();
+	// }
 
 	private JPanel makeFrame(Party party) {
 
@@ -74,10 +77,10 @@ public class LaneView implements LaneObserver, ActionListener {
 
 		balls = new JPanel[numBowlers][23];
 		ballLabel = new JLabel[numBowlers][23];
-		scores = new JPanel[numBowlers][10];
+		JPanel[][] scores = new JPanel[numBowlers][10];
 		scoreLabel = new JLabel[numBowlers][10];
-		ballGrid = new JPanel[numBowlers][10];
-		pins = new JPanel[numBowlers];
+		JPanel[][] ballGrid = new JPanel[numBowlers][10];
+		JPanel[] pins = new JPanel[numBowlers];
 
 		for (int i = 0; i != numBowlers; i++) {
 			for (int j = 0; j != 23; j++) {
@@ -148,17 +151,14 @@ public class LaneView implements LaneObserver, ActionListener {
 				cpanel.removeAll();
 				cpanel.add(makeFrame(party), "Center");
 
+				Factory f = new Factory();
 				// Button Panel
-				JPanel buttonPanel = new JPanel();
-				buttonPanel.setLayout(new FlowLayout());
+				JPanel buttonPanel = f.CreateJPanel(new FlowLayout());
 
 				Insets buttonMargin = new Insets(4, 4, 4, 4);
 
 				maintenance = new JButton("Maintenance Call");
-				JPanel maintenancePanel = new JPanel();
-				maintenancePanel.setLayout(new FlowLayout());
-				maintenance.addActionListener(this);
-				maintenancePanel.add(maintenance);
+				JPanel maintenancePanel = f.CreatePanelWithButton(maintenance, new FlowLayout(), this);
 
 				buttonPanel.add(maintenancePanel);
 
@@ -197,7 +197,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource().equals(maintenance)) {
-			lane.pauseGame();
+			lane.pauseGame(true);
 		}
 	}
 }
