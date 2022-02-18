@@ -8,7 +8,6 @@ import party.Party;
 import score.ScoreHistoryFile;
 
 class LaneScore {
-	private int[] curScores;
 	private int[][] cumulScores;
 	private HashMap scores;
 
@@ -20,16 +19,16 @@ class LaneScore {
 		return (int[])scores.get(Cur);
 	}
 
-	public void setScoresInHashMap(Bowler Cur, int[] curScore) {
-		scores.put(Cur, curScore);
-	}
-
 	private void setCumulScore(int row, int col, int value) {
 		this.cumulScores[row][col] = value;
 	}
 
 	private void incrementCumulScore(int row, int col, int incValue) {
 		setCumulScore(row, col, getCumulScore(row, col) + incValue);
+	}
+
+	public void setScoresInHashMap(Bowler Cur, int[] curScore) {
+		scores.put(Cur, curScore);
 	}
 
 	public int getCumulScore(int row, int col) {
@@ -45,7 +44,6 @@ class LaneScore {
 	}
 
 	public void initScoresArrays(int size) {
-		curScores = new int[size];
 		cumulScores = new int[size][10];
 	}
 

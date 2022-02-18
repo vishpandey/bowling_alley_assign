@@ -439,11 +439,6 @@ public class Lane extends Thread implements PinsetterObserver {
 		publish();
 	}
 
-	// public void resumeGame() {
-	// 	gameIsHalted = false;
-	// 	publish();
-	// }
-
 	/** resetScores()
 	 * 
 	 * resets the scoring mechanism, must be called before scoring starts
