@@ -1,0 +1,506 @@
+@startuml
+
+title __BOWLINGALLEY's Class Diagram__\n
+
+  namespace  {
+    namespace owler {
+      class bowler.Bowler {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace owler {
+      class bowler.Bowler {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace owler {
+      class bowler.BowlerFile {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace owler {
+      class bowler.BowlerFile {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDesk {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDesk {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDeskEvent {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDeskEvent {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      interface controlDesk.ControlDeskObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      interface controlDesk.ControlDeskObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDeskView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ontrolDesk {
+      class controlDesk.ControlDeskView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    class drive {
+    }
+  }
+  
+
+  namespace  {
+    class drive {
+    }
+  }
+  
+
+  namespace  {
+    namespace ndGame {
+      class endGame.EndGamePrompt {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ndGame {
+      class endGame.EndGamePrompt {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ndGame {
+      class endGame.EndGameReport {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ndGame {
+      class endGame.EndGameReport {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.Lane {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.Lane {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneEventInterface {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneEventInterface {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneScore {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneScore {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneServer {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      interface lane.LaneServer {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneStatusView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneStatusView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ane {
+      class lane.LaneView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace isc {
+      class misc.Alley {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace isc {
+      class misc.Alley {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace isc {
+      class misc.Queue {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace isc {
+      class misc.Queue {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.AddPartyView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.AddPartyView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.NewPatronView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.NewPatronView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.Party {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace arty {
+      class party.Party {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      class pinsetter.PinSetterView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      class pinsetter.PinSetterView {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      class pinsetter.Pinsetter {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      class pinsetter.Pinsetter {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      interface pinsetter.PinsetterObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace insetter {
+      interface pinsetter.PinsetterObserver {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.PrintableText {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.PrintableText {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.Score {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.Score {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.ScoreHistoryFile {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.ScoreHistoryFile {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.ScoreReport {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace core {
+      class score.ScoreReport {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace iews {
+      class views.Factory {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace iews {
+      class views.Factory {
+      }
+    }
+  }
+  
+
+  controlDesk.ControlDeskView .up.|> ActionListener
+  controlDesk.ControlDeskView .up.|> ControlDeskObserver
+  controlDesk.ControlDeskView .up.|> controlDesk.ControlDeskObserver
+  controlDesk.ControlDeskView .up.|> java.awt.event.ActionListener
+  endGame.EndGamePrompt .up.|> ActionListener
+  endGame.EndGamePrompt .up.|> java.awt.event.ActionListener
+  endGame.EndGameReport .up.|> ActionListener
+  endGame.EndGameReport .up.|> ListSelectionListener
+  endGame.EndGameReport .up.|> java.awt.event.ActionListener
+  endGame.EndGameReport .up.|> javax.swing.event.ListSelectionListener
+  lane.Lane .up.|> PinsetterObserver
+  lane.Lane .up.|> pinsetter.PinsetterObserver
+  lane.LaneStatusView .up.|> ActionListener
+  lane.LaneStatusView .up.|> LaneObserver
+  lane.LaneStatusView .up.|> PinsetterObserver
+  lane.LaneStatusView .up.|> java.awt.event.ActionListener
+  lane.LaneStatusView .up.|> lane.LaneObserver
+  lane.LaneStatusView .up.|> pinsetter.PinsetterObserver
+  lane.LaneView .up.|> java.awt.event.ActionListener
+  lane.LaneView .up.|> lane.LaneObserver
+  lane.LaneView .up.|> ActionListener
+  lane.LaneView .up.|> LaneObserver
+  party.AddPartyView .up.|> ActionListener
+  party.AddPartyView .up.|> ListSelectionListener
+  party.AddPartyView .up.|> java.awt.event.ActionListener
+  party.AddPartyView .up.|> javax.swing.event.ListSelectionListener
+  party.NewPatronView .up.|> java.awt.event.ActionListener
+  party.NewPatronView .up.|> ActionListener
+  pinsetter.PinSetterView .up.|> pinsetter.PinsetterObserver
+  pinsetter.PinSetterView .up.|> PinsetterObserver
+  score.PrintableText .up.|> java.awt.print.Printable
+  score.PrintableText .up.|> Printable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
